@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文章标题</title>
+</head>
+<body style="margin:0;padding:0;background:#f4f4f4;">
+<!--
+  微信公众号长文模板 · 竹心一言（精美组件版）
+  ===================================================================
+  规则：
+  1. 全部样式内联，禁止 <style>/class/id/JS/外链CSS/position/浮动；
+  2. 复制 <body> 内从「正文容器」开始到文末的全部内容，粘贴到公众号后台；
+  3. 图片 src 必须是公网可访问 URL；网络搜图发布前在公众号后台重新上传；
+  4. 默认主色为竹青 #2d5f4f。换主题色不要手动改，运行：
+       python3 scripts/apply_theme.py article.html <主题名>
+     可选主题：bamboo(竹青,默认) tech-blue(科技蓝) warm-orange(暖橙)
+     forest(森林绿) elegant-purple(典雅紫) china-red(中国红)
+     ink-dark(墨黑) sunset(日落橘) teal(青蓝) rose(玫红)
+  5. 正文字号17px、行高1.9，手机阅读舒适；
+  6. 组件清单：章节卡片标题 / 胶囊标签 / 彩色标签段落 / 金句卡片 /
+     数据卡片 / 时间线 / 要点列表 / 配图 / 分隔符 / 作者署名区；
+  7. 蓝/绿/橙/红四色为功能标签色，不随主题变化。
+  ===================================================================
+-->
+<section style="max-width:677px;margin:0 auto;padding:28px 20px 48px;background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#2c2c2c;font-size:17px;line-height:1.9;letter-spacing:0.3px;">
+
+  <!-- ========== 标题区 ========== -->
+  <section style="margin:0 0 24px;">
+    <h1 style="margin:0 0 14px;font-size:25px;line-height:1.45;font-weight:800;color:#1a1a1a;letter-spacing:0.5px;">在这里写文章主标题，可两行以内</h1>
+    <p style="margin:0 0 16px;font-size:14px;color:#9a9a9a;line-height:1.6;">
+      竹心一言<span style="margin:0 8px;color:#ddd;">|</span><span>2026年X月X日</span><span style="margin:0 8px;color:#ddd;">|</span>全文约XXXX字
+    </p>
+    <p style="margin:0;padding:12px 16px;background:#f7f6f2;border-radius:8px;font-size:15px;color:#6a6a6a;line-height:1.8;border-left:3px solid #c9b879;">在这里写一句导语或核心提要，交代这篇文章要回答的问题，也可以是最打动人的那句话。</p>
+  </section>
+
+  <!-- ========== 封面图 ========== -->
+  <section style="margin:0 0 28px;">
+    <img src="https://example.com/cover.jpg" alt="封面图" style="width:100%;display:block;border-radius:10px;" />
+    <p style="margin:10px 0 0;font-size:13px;color:#a8a8a8;line-height:1.6;text-align:center;">封面图注：一句话补充信息或表达态度</p>
+  </section>
+
+  <!-- ========== 开篇正文 ========== -->
+  <p style="margin:0 0 22px;">开篇第一段从一个具体场景、人物或反差事实切入。不要用"随着……的发展"开头。三段之内让读者知道这件事和他有关，值得花很长时间读下去。</p>
+
+  <!-- ============================================================ -->
+  <!-- 组件一：章节卡片标题（浅底+左色条+可选胶囊）                    -->
+  <!-- ============================================================ -->
+  <section style="margin:40px 0 22px;padding:20px 22px;background:#eef4f1;border-radius:12px;border-left:6px solid #2d5f4f;">
+    <h2 style="margin:0;font-size:21px;line-height:1.5;font-weight:800;color:#1a1a1a;">一、章节标题写在这里</h2>
+    <!-- 可选胶囊标签：不需要就删掉下面这行 -->
+    <p style="margin:10px 0 0;"><span style="display:inline-block;padding:4px 16px;background:#2d5f4f;color:#ffffff;font-size:13px;font-weight:500;border-radius:20px;letter-spacing:1px;">1956年</span></p>
+  </section>
+
+  <p style="margin:0 0 22px;">正文段落。每段不超过手机四行。多用具体的人名、地名、时间、数字和直接引语。需要强调时用<span style="color:#2d5f4f;font-weight:700;">彩色加粗</span>，或用<span style="background:#dcebe5;padding:0 4px;border-radius:3px;">荧光笔效果</span>。</p>
+
+  <!-- 组件二：小节标题（小色块+文字） -->
+  <h3 style="margin:30px 0 14px;font-size:18px;line-height:1.5;font-weight:700;color:#1a1a1a;">
+    <span style="display:inline-block;width:7px;height:18px;background:#2d5f4f;border-radius:2px;margin-right:10px;vertical-align:-2px;"></span>小节标题
+  </h3>
+
+  <p style="margin:0 0 22px;">正文段落。</p>
+
+  <!-- ============================================================ -->
+  <!-- 组件三：彩色标签段落（蓝=定义 绿=解析 橙=影响 红=警示）          -->
+  <!-- ============================================================ -->
+  <p style="margin:0 0 18px;font-size:17px;line-height:1.95;color:#2c2c2c;">
+    <span style="display:inline-block;padding:2px 12px;margin-right:10px;border-radius:6px;font-size:15px;font-weight:700;color:#3b7dd8;background:#e8f1fc;vertical-align:1px;">定义</span>这里是蓝色标签后的正文，适合写概念界定、术语解释。
+  </p>
+  <p style="margin:0 0 18px;font-size:17px;line-height:1.95;color:#2c2c2c;">
+    <span style="display:inline-block;padding:2px 12px;margin-right:10px;border-radius:6px;font-size:15px;font-weight:700;color:#3a9d6d;background:#e8f6ee;vertical-align:1px;">解析</span>这里是绿色标签后的正文，适合写原因分析、细节拆解。
+  </p>
+  <p style="margin:0 0 22px;font-size:17px;line-height:1.95;color:#2c2c2c;">
+    <span style="display:inline-block;padding:2px 12px;margin-right:10px;border-radius:6px;font-size:15px;font-weight:700;color:#d9832e;background:#fdf1e4;vertical-align:1px;">影响</span>这里是橙色标签后的正文，适合写意义、后果、启示。红色标签同理：color:#d4564b;background:#fdecea。
+  </p>
+
+  <!-- ============================================================ -->
+  <!-- 组件四：金句/引用卡片                                           -->
+  <!-- ============================================================ -->
+  <section style="margin:28px 0;padding:20px 22px;background:#faf9f5;border-radius:10px;border-left:4px solid #c9b879;">
+    <p style="margin:0;font-size:17px;line-height:1.9;color:#5a5a5a;font-style:italic;">"这里放一段直接引语或值得反复读的金句。要像人说的话，不要书面化。"</p>
+    <p style="margin:10px 0 0;font-size:13px;color:#a8a8a8;">—— 说话人身份，来源平台</p>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 组件五：数据卡片（三列，用 table 保证微信兼容）                  -->
+  <!-- ============================================================ -->
+  <table style="width:100%;border-collapse:separate;border-spacing:8px;margin:28px -8px;">
+    <tr>
+      <td style="width:33.33%;background:#eef4f1;border-radius:10px;padding:16px 8px;text-align:center;vertical-align:middle;">
+        <p style="margin:0;font-size:26px;font-weight:800;color:#2d5f4f;line-height:1.2;">38<span style="font-size:16px;">块</span></p>
+        <p style="margin:6px 0 0;font-size:12px;color:#8a8a8a;line-height:1.4;">单价</p>
+      </td>
+      <td style="width:33.33%;background:#eef4f1;border-radius:10px;padding:16px 8px;text-align:center;vertical-align:middle;">
+        <p style="margin:0;font-size:26px;font-weight:800;color:#2d5f4f;line-height:1.2;">3.2<span style="font-size:16px;">亿</span></p>
+        <p style="margin:6px 0 0;font-size:12px;color:#8a8a8a;line-height:1.4;">用户规模</p>
+      </td>
+      <td style="width:33.33%;background:#eef4f1;border-radius:10px;padding:16px 8px;text-align:center;vertical-align:middle;">
+        <p style="margin:0;font-size:26px;font-weight:800;color:#2d5f4f;line-height:1.2;">+67<span style="font-size:16px;">%</span></p>
+        <p style="margin:6px 0 0;font-size:12px;color:#8a8a8a;line-height:1.4;">同比增长</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ============================================================ -->
+  <!-- 组件六：时间线（纵向，手机友好，无 position）                    -->
+  <!-- ============================================================ -->
+  <section style="margin:28px 0;padding:24px 22px;background:#fafbfc;border-radius:12px;">
+    <p style="margin:0 0 18px;font-size:16px;font-weight:700;color:#1a1a1a;text-align:center;">事件时间线</p>
+    <section style="padding-left:22px;border-left:2px solid #e2e2e2;">
+      <section style="margin-bottom:18px;">
+        <p style="margin:0 0 0 -27px;padding:0;font-size:0;line-height:1;">
+          <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#2d5f4f;vertical-align:middle;"></span><span style="display:inline-block;margin-left:10px;font-size:15px;font-weight:700;color:#2d5f4f;vertical-align:middle;">2015年</span>
+        </p>
+        <p style="margin:6px 0 0 0;font-size:15px;color:#3f3f3f;line-height:1.8;">行业萌芽，第一批玩家带着不同的想法入场，一切都还很粗糙。</p>
+      </section>
+      <section style="margin-bottom:18px;">
+        <p style="margin:0 0 0 -27px;padding:0;font-size:0;line-height:1;">
+          <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#2d5f4f;vertical-align:middle;"></span><span style="display:inline-block;margin-left:10px;font-size:15px;font-weight:700;color:#2d5f4f;vertical-align:middle;">2019年</span>
+        </p>
+        <p style="margin:6px 0 0 0;font-size:15px;color:#3f3f3f;line-height:1.8;">资本涌入，赛道骤然升温，价格战和补贴战同时打响。</p>
+      </section>
+      <section style="margin-bottom:0;">
+        <p style="margin:0 0 0 -27px;padding:0;font-size:0;line-height:1;">
+          <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#2d5f4f;vertical-align:middle;"></span><span style="display:inline-block;margin-left:10px;font-size:15px;font-weight:700;color:#2d5f4f;vertical-align:middle;">2024年</span>
+        </p>
+        <p style="margin:6px 0 0 0;font-size:15px;color:#3f3f3f;line-height:1.8;">潮水退去，活下来的人开始重新算账，故事换了一种讲法。</p>
+      </section>
+    </section>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 组件七：要点列表                                               -->
+  <!-- ============================================================ -->
+  <p style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a1a;">几个关键判断：</p>
+  <p style="margin:0 0 10px;padding-left:22px;font-size:17px;line-height:1.9;color:#2c2c2c;">
+    <span style="color:#2d5f4f;font-weight:800;margin-left:-18px;">▪</span> 第一个要点，写清楚一件事。
+  </p>
+  <p style="margin:0 0 10px;padding-left:22px;font-size:17px;line-height:1.9;color:#2c2c2c;">
+    <span style="color:#2d5f4f;font-weight:800;margin-left:-18px;">▪</span> 第二个要点。
+  </p>
+  <p style="margin:0 0 22px;padding-left:22px;font-size:17px;line-height:1.9;color:#2c2c2c;">
+    <span style="color:#2d5f4f;font-weight:800;margin-left:-18px;">▪</span> 第三个要点。
+  </p>
+
+  <!-- ========== 配图组件 ========== -->
+  <section style="margin:30px 0;">
+    <img src="https://example.com/figure-01.jpg" alt="配图说明" style="width:100%;display:block;border-radius:8px;" />
+    <p style="margin:10px 0 0;font-size:13px;color:#a8a8a8;line-height:1.6;text-align:center;">图注：图注是正文的延伸，不是"图为某某"的说明</p>
+  </section>
+
+  <p style="margin:0 0 22px;">配图之后继续正文。每1500–3000字一张图，节奏靠"故事—分析—故事"交替。</p>
+
+  <!-- ========== 分隔符 ========== -->
+  <p style="margin:34px 0;text-align:center;font-size:14px;color:#cfcfcf;letter-spacing:10px;">· · ·</p>
+
+  <!-- 下一个章节：复制上面的「章节卡片标题」继续即可 -->
+  <section style="margin:40px 0 22px;padding:20px 22px;background:#eef4f1;border-radius:12px;border-left:6px solid #2d5f4f;">
+    <h2 style="margin:0;font-size:21px;line-height:1.5;font-weight:800;color:#1a1a1a;">二、下一个章节</h2>
+  </section>
+
+  <p style="margin:0 0 22px;">重复使用模板内的组件，不要引入新的样式写法，保持全文视觉统一。</p>
+
+  <!-- ========== 参考资料（可选） ========== -->
+  <section style="margin:44px 0 0;padding:22px;background:#fafbfc;border-radius:10px;">
+    <p style="margin:0 0 12px;font-size:15px;font-weight:700;color:#1a1a1a;">参考资料</p>
+    <p style="margin:0 0 6px;font-size:13px;color:#9a9a9a;line-height:1.8;">1. 平台名 ·《文章或视频标题》· 发布时间</p>
+    <p style="margin:0 0 6px;font-size:13px;color:#9a9a9a;line-height:1.8;">2. 平台名 ·《标题》· 发布时间</p>
+    <p style="margin:0;font-size:13px;color:#9a9a9a;line-height:1.8;">3. 机构名 ·《报告名称》· 发布时间</p>
+  </section>
+
+  <!-- ========== 文末署名区 ========== -->
+  <section style="margin:36px 0 0;padding:24px 0 0;border-top:1px solid #eeeeee;">
+    <section style="margin-bottom:12px;font-size:0;">
+      <!-- 头像：发布前替换为真实头像图片URL；没有头像可删掉整个 img 标签 -->
+      <img src="https://example.com/avatar.jpg" alt="竹心一言" style="width:46px;height:46px;border-radius:50%;vertical-align:middle;" />
+      <span style="margin-left:12px;font-size:17px;font-weight:700;color:#1a1a1a;vertical-align:middle;">竹心一言</span>
+    </section>
+    <p style="margin:0 0 6px;font-size:14px;color:#8a8a8a;line-height:1.7;">写一点作者简介，比如关注的领域、更新频率。</p>
+    <p style="margin:18px 0 0;font-size:14px;color:#b0b0b0;line-height:1.7;">— 全文完 · 感谢阅读 —</p>
+  </section>
+
+</section>
+</body>
+</html>
