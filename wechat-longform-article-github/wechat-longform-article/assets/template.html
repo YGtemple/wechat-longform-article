@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文章标题</title>
+</head>
+<body style="margin:0;padding:0;background:#eceae4;">
+<!--
+  微信公众号长文模板 · 竹心一言（暖纸多彩版）
+  ===================================================================
+  规则：
+  1. 全部样式内联，禁止 <style>/class/id/JS/外链CSS/position/浮动；
+  2. 复制 <body> 内从「正文容器」开始到文末的全部内容，粘贴到公众号后台；
+  3. 图片 src 必须是公网可访问 URL；网络搜图发布前在公众号后台重新上传；
+  4. 默认主色为竹青 #2d5f4f。换主题色不要手动改，运行：
+       python3 scripts/apply_theme.py article.html <主题名>
+     可选主题：bamboo(竹青,默认) tech-blue(科技蓝) warm-orange(暖橙)
+     forest(森林绿) elegant-purple(典雅紫) china-red(中国红)
+     ink-dark(墨黑) sunset(日落橘) teal(青蓝) rose(玫红)
+  5. 正文字号17px、行高1.9，手机阅读舒适；
+  6. 【纸质背景】正文容器为暖米色 #faf7f0（不随主题变），正文用柔灰
+     #3a3a3a 而非纯黑，降低对比度，长读不刺眼；组件卡片用纯白 #ffffff
+     浮在暖米底上形成层次。换主题只换强调色，不换纸色。
+  6. 组件清单（22类）：
+     ── 结构类 ──
+     1. 标题区（含装饰色条+导语）
+     2. 章节卡片标题（浅底+左色条+可选胶囊）
+     3. 渐变章节标题（深色底白字，适合重磅章节）
+     4. 小节标题（小色块+文字）
+     ── 正文与内联色彩 ──
+     5. 正文段落（6种内联色彩手法，见下方详解）
+     6. 彩色标签段落（蓝定义/绿解析/橙影响/红警示/紫延伸）
+     7. 金句/引用卡片（米色底+金色边）
+     8. 对话气泡（圆角+署名）
+     9. 人物卡片 / Q&A问答块 / 红绿对比行 / 浅色旁注
+     ── 数据类 ──
+     10. 三列多彩数据卡片（蓝/绿/橙）
+     11. 单数据大卡（深色渐变底，视觉冲击）
+     ── 结构可视化 ──
+     12. 纵向时间线（圆点+竖线）
+     13. 双列对比卡（左右不同色）
+     14. 数字步骤卡（编号圆圈）
+     15. 要点列表
+     16. 关键词标签云（多彩胶囊）
+     ── 装饰类 ──
+     17. 配图（标准/色条图注两种）
+     18. 分隔符（圆点三色/短线两种）
+     19. 参考资料 + 作者署名区
+  7. 蓝/绿/橙/红/紫五色为功能标签色，不随主题变化。
+  8. 图片间距已收紧（margin 18px），每800–1800字一张图，保持视觉密度。
+  9. 【重要】正文禁止整段纯黑字：每段至少用一处内联色彩（彩色加粗/
+     多色荧光笔/数字强调/段首引导词/核心句强调/情绪词着色），让读者
+     每隔一两行就能看到一个"颜色落点"，避免密密麻麻黑字的阅读疲劳。
+  ===================================================================
+-->
+<section style="max-width:677px;margin:0 auto;padding:28px 20px 48px;background:#faf7f0;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#3a3a3a;font-size:17px;line-height:1.9;letter-spacing:0.3px;">
+
+  <!-- ========== 标题区 ========== -->
+  <section style="margin:0 0 22px;">
+    <!-- 装饰色条 -->
+    <p style="margin:0 0 14px;font-size:0;line-height:1;">
+      <span style="display:inline-block;width:36px;height:4px;background:#2d5f4f;border-radius:2px;"></span>
+      <span style="display:inline-block;width:8px;height:4px;background:#c9b879;border-radius:2px;margin-left:4px;"></span>
+    </p>
+    <h1 style="margin:0 0 14px;font-size:26px;line-height:1.45;font-weight:800;color:#1a1a1a;letter-spacing:0.5px;">在这里写文章主标题，可两行以内</h1>
+    <p style="margin:0 0 16px;font-size:14px;color:#9a9a9a;line-height:1.6;">
+      竹心一言<span style="margin:0 8px;color:#ddd;">|</span><span>2026年X月X日</span><span style="margin:0 8px;color:#ddd;">|</span>全文约XXXX字
+    </p>
+    <p style="margin:0;padding:14px 18px;background:#ffffff;border-radius:10px;font-size:15px;color:#6a6a6a;line-height:1.8;border-left:4px solid #c9b879;">在这里写一句导语或核心提要，交代这篇文章要回答的问题，也可以是最打动人的那句话。</p>
+  </section>
+
+  <!-- ========== 封面图 ========== -->
+  <section style="margin:0 0 22px;">
+    <img src="https://example.com/cover.jpg" alt="封面图" style="width:100%;display:block;border-radius:12px;" />
+    <p style="margin:8px 0 0;font-size:13px;color:#a8a8a8;line-height:1.6;text-align:center;">封面图注：一句话补充信息或表达态度</p>
+  </section>
+
+  <!-- ========== 开篇正文 ========== -->
+  <p style="margin:0 0 20px;">开篇第一段从一个具体场景、人物或反差事实切入。不要用"随着……的发展"开头。三段之内让读者知道这件事和他有关，值得花很长时间读下去。</p>
+
+  <!-- ============================================================ -->
+  <!-- 组件2：章节卡片标题（浅底+左色条+可选胶囊）                    -->
+  <!-- ============================================================ -->
+  <section style="margin:32px 0 20px;padding:20px 22px;background:#eef4f1;border-radius:12px;border-left:6px solid #2d5f4f;">
+    <h2 style="margin:0;font-size:21px;line-height:1.5;font-weight:800;color:#1a1a1a;">一、章节标题写在这里</h2>
+    <!-- 可选胶囊标签：不需要就删掉下面这行 -->
+    <p style="margin:10px 0 0;"><span style="display:inline-block;padding:4px 16px;background:#2d5f4f;color:#ffffff;font-size:13px;font-weight:500;border-radius:20px;letter-spacing:1px;">1956年</span></p>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 组件5：正文段落（内联色彩手法全展示）                          -->
+  <!-- 每段都要有至少一处色彩变化，禁止整段纯黑字。以下手法可组合使用。-->
+  <!-- ============================================================ -->
+
+  <!-- 手法①：主题色加粗（标关键词）+ 主题色荧光笔 -->
+  <p style="margin:0 0 20px;">正文段落。每段不超过手机四行。需要强调关键词时用<span style="color:#2d5f4f;font-weight:700;">主题色加粗</span>，或用<span style="background:#dcebe5;padding:0 4px;border-radius:3px;">主题色荧光笔</span>标出核心概念。</p>
+
+  <!-- 手法②：多色荧光笔（黄=核心观点 粉=反常识细节 蓝=数据 绿=积极 橙=转折） -->
+  <p style="margin:0 0 20px;">不同语义用不同颜色的荧光笔：<span style="background:#fef9c3;padding:0 4px;border-radius:3px;">黄色标核心观点</span>，<span style="background:#fce7f3;padding:0 4px;border-radius:3px;">粉色标反常识细节</span>，<span style="background:#dbeafe;padding:0 4px;border-radius:3px;">蓝色标数据和数字</span>，<span style="background:#d1fae5;padding:0 4px;border-radius:3px;">绿色标积极信号</span>，<span style="background:#fed7aa;padding:0 4px;border-radius:3px;">橙色标转折和注意</span>。</p>
+
+  <!-- 手法③：关键数字彩色大号强调（红=警示/下降 绿=增长 主题色=重要） -->
+  <p style="margin:0 0 20px;">正文中出现关键数字时，用彩色大号字砸出来：一杯咖啡卖到<span style="color:#d4564b;font-weight:800;font-size:19px;">38块</span>，比去年贵了<span style="color:#d4564b;font-weight:800;font-size:19px;">11块</span>；而用户规模涨到了<span style="color:#3a9d6d;font-weight:800;font-size:19px;">3.2亿</span>，同比<span style="color:#3a9d6d;font-weight:800;font-size:19px;">+67%</span>。</p>
+
+  <!-- 手法④：段首彩色引导词（2–4字主题色加粗放大，带出整段） -->
+  <p style="margin:0 0 20px;"><span style="color:#2d5f4f;font-weight:800;font-size:18px;">先说结论。</span>段首用两到四个字的彩色引导词开场，后面接正文。引导词可以是"先说结论""有意思的是""问题在于""说白了""可你猜怎么着"，让读者一眼抓住段落走向。</p>
+
+  <!-- 手法⑤：核心句整句强调（主题色加粗放大，单独成段或段中一句） -->
+  <p style="margin:0 0 20px;font-size:18px;color:#2d5f4f;font-weight:700;line-height:1.9;">这一句是全段最核心的判断，用主题色加粗放大单独成段，读者扫一眼就知道你要说什么。</p>
+
+  <!-- 手法⑥：情绪/判断词着色（红=愤怒/警示 橙=惋惜 蓝=冷静分析） -->
+  <p style="margin:0 0 20px;">这事儿说起来让人<span style="color:#d4564b;font-weight:700;">愤怒</span>，更多的是<span style="color:#d9832e;font-weight:700;">无奈</span>。但冷静下来看，<span style="color:#3b7dd8;font-weight:700;">真正的问题</span>不在价格，而在整条链条的利益分配。</p>
+
+  <!-- 组件4：小节标题（小色块+文字） -->
+  <h3 style="margin:26px 0 12px;font-size:18px;line-height:1.5;font-weight:700;color:#1a1a1a;">
+    <span style="display:inline-block;width:7px;height:18px;background:#2d5f4f;border-radius:2px;margin-right:10px;vertical-align:-2px;"></span>小节标题
+  </h3>
+
+  <p style="margin:0 0 20px;">正文段落。</p>
+
+  <!-- ============================================================ -->
+  <!-- 组件3：渐变章节标题（深色底白字，适合重磅章节/章首）            -->
+  <!-- ============================================================ -->
+  <section style="margin:32px 0 20px;padding:22px 24px;background-color:#2d5f4f;background-image:linear-gradient(135deg,#2d5f4f,#1e4236);border-radius:12px;">
+    <h2 style="margin:0;font-size:21px;line-height:1.5;font-weight:800;color:#ffffff;">二、重磅章节标题</h2>
+    <p style="margin:8px 0 0;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.6;">可选的章节副标题，用一句话概括本章核心</p>
+  </section>
+
+  <p style="margin:0 0 20px;">渐变章节标题后的正文。深色标题能在长文中制造强烈的视觉停顿，适合每章开头或关键转折处。</p>
+
+  <!-- ============================================================ -->
+  <!-- 组件6：彩色标签段落（五色可选，标签词根据内容自定义，不固定）    -->
+  <!-- 蓝=冷静/背景  绿=增长/积极  橙=转折/注意  红=风险/反方  紫=延伸 -->
+  <!-- 标签写2–4个字，如"算账""翻车""冷知识""别急"，别死用定义解析影响 -->
+  <!-- ============================================================ -->
+  <p style="margin:0 0 14px;font-size:17px;line-height:1.95;color:#3a3a3a;">
+    <span style="display:inline-block;padding:2px 12px;margin-right:10px;border-radius:6px;font-size:15px;font-weight:700;color:#3b7dd8;background:#e8f1fc;vertical-align:1px;">背景</span>蓝色标签适合交代背景、概念、时间地点，标签词自己定。
+  </p>
+  <p style="margin:0 0 14px;font-size:17px;line-height:1.95;color:#3a3a3a;">
+    <span style="display:inline-block;padding:2px 12px;margin-right:10px;border-radius:6px;font-size:15px;font-weight:700;color:#3a9d6d;background:#e8f6ee;vertical-align:1px;">增长</span>绿色标签适合写积极信号、增长数据、好的转变。
+  </p>
+  <p style="margin:0 0 14px;font-size:17px;line-height:1.95;color:#3a3a3a;">
+    <span style="display:inline-block;padding:2px 12px;margin-right:10px;border-radius:6px;font-size:15px;font-weight:700;color:#d9832e;background:#fdf1e4;vertical-align:1px;">转折</span>橙色标签适合写转折、意外、需要留意的事。
+  </p>
+  <p style="margin:0 0 14px;font-size:17px;line-height:1.95;color:#3a3a3a;">
+    <span style="display:inline-block;padding:2px 12px;margin-right:10px;border-radius:6px;font-size:15px;font-weight:700;color:#d4564b;background:#fdecea;vertical-align:1px;">风险</span>红色标签适合写风险、反方观点、警示。
+  </p>
+  <p style="margin:0 0 20px;font-size:17px;line-height:1.95;color:#3a3a3a;">
+    <span style="display:inline-block;padding:2px 12px;margin-right:10px;border-radius:6px;font-size:15px;font-weight:700;color:#7c5cbf;background:#f2edfb;vertical-align:1px;">冷知识</span>紫色标签适合写延伸、题外话、横向联想。
+  </p>
+
+  <!-- ============================================================ -->
+  <!-- 组件7：金句/引用卡片                                           -->
+  <!-- ============================================================ -->
+  <section style="margin:22px 0;padding:20px 22px;background:#ffffff;border-radius:10px;border-left:4px solid #c9b879;">
+    <p style="margin:0;font-size:17px;line-height:1.9;color:#5a5a5a;font-style:italic;">"这里放一段直接引语或值得反复读的金句。要像人说的话，不要书面化。"</p>
+    <p style="margin:10px 0 0;font-size:13px;color:#a8a8a8;">—— 说话人身份，来源平台</p>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 组件8：对话气泡（比金句卡更轻，适合日常对话/评论区原话）        -->
+  <!-- ============================================================ -->
+  <section style="margin:22px 0;padding:16px 20px;background:#ffffff;border-radius:2px 12px 12px 12px;border-left:3px solid #2d5f4f;">
+    <p style="margin:0;font-size:16px;line-height:1.85;color:#3f3f3f;">"他跟我说，干这行五年，头一回觉得手里的钱这么不经花。"</p>
+    <p style="margin:8px 0 0;font-size:13px;color:#9a9a9a;text-align:right;">—— 一位县城店主，抖音评论区</p>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 组件9：人物卡片（介绍关键人物时用，米色描边）                   -->
+  <!-- ============================================================ -->
+  <section style="margin:22px 0;padding:18px 20px;background:#ffffff;border-radius:12px;border:1px solid #ece3cc;">
+    <p style="margin:0 0 8px;font-size:16px;font-weight:700;color:#8a6d2b;">人物 · 张某某</p>
+    <p style="margin:0;font-size:15px;color:#555;line-height:1.85;">38岁，河南南阳人，在县城开了六年咖啡店。经历过最贵的房租和最便宜的咖啡豆，见证了这条街从三家店变成十七家店。</p>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 组件9b：Q&A 问答块（蓝Q绿A，适合写读者关心的问题与回答）        -->
+  <!-- ============================================================ -->
+  <section style="margin:22px 0;padding:18px 20px;background:#ffffff;border-radius:12px;">
+    <p style="margin:0 0 10px;font-size:16px;line-height:1.85;color:#3a3a3a;"><span style="display:inline-block;width:24px;height:24px;line-height:24px;text-align:center;background:#3b7dd8;color:#ffffff;border-radius:6px;font-size:14px;font-weight:700;margin-right:10px;">Q</span>一杯咖啡卖38块，到底贵在哪？</p>
+    <p style="margin:0;font-size:16px;line-height:1.85;color:#3a3a3a;"><span style="display:inline-block;width:24px;height:24px;line-height:24px;text-align:center;background:#3a9d6d;color:#ffffff;border-radius:6px;font-size:14px;font-weight:700;margin-right:10px;">A</span>豆子其实没涨多少，涨的是房租、加盟费和平台抽成。这三样加起来，占了一杯咖啡成本的六成以上。</p>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 组件9c：红绿对比行（▲支持/▼反对，适合摆对立观点）              -->
+  <!-- ============================================================ -->
+  <p style="margin:14px 0 10px;font-size:16px;font-weight:700;color:#1a1a1a;">两边的说法：</p>
+  <p style="margin:0 0 10px;padding:12px 16px;background:#ffffff;border-radius:8px;font-size:15px;line-height:1.85;color:#3a3a3a;border-left:3px solid #3a9d6d;">
+    <span style="color:#3a9d6d;font-weight:800;margin-right:6px;">▲ 支持方</span>价格战让咖啡从小众饮品变成日常，3.2亿用户就是证明。
+  </p>
+  <p style="margin:0 0 20px;padding:12px 16px;background:#ffffff;border-radius:8px;font-size:15px;line-height:1.85;color:#3a3a3a;border-left:3px solid #d4564b;">
+    <span style="color:#d4564b;font-weight:800;margin-right:6px;">▼ 反对方</span>9.9元逼死的是独立小店，最后整条街只剩连锁品牌，消费者没得选。
+  </p>
+
+  <!-- ============================================================ -->
+  <!-- 组件9d：浅色旁注小段（小字+浅色底，补充题外话/背景/注释）       -->
+  <!-- ============================================================ -->
+  <p style="margin:18px 0;padding:12px 16px;background:#f3efe6;border-radius:8px;font-size:14px;color:#8a7a5a;line-height:1.8;">旁注：这里补充一句题外话或背景说明，用小字浅色底，和正文区分开。比如"南阳下辖10个县，其中6个县在2024年开出了第一家连锁咖啡店。"</p>
+
+  <!-- ============================================================ -->
+  <!-- 组件10：三列多彩数据卡片（蓝/绿/橙，用 table 保证微信兼容）     -->
+  <!-- ============================================================ -->
+  <table style="width:100%;border-collapse:separate;border-spacing:8px;margin:24px -8px;">
+    <tr>
+      <td style="width:33.33%;background:#e8f1fc;border-radius:10px;padding:16px 8px;text-align:center;vertical-align:middle;">
+        <p style="margin:0;font-size:26px;font-weight:800;color:#3b7dd8;line-height:1.2;">38<span style="font-size:16px;">块</span></p>
+        <p style="margin:6px 0 0;font-size:12px;color:#8a8a8a;line-height:1.4;">单价</p>
+      </td>
+      <td style="width:33.33%;background:#e8f6ee;border-radius:10px;padding:16px 8px;text-align:center;vertical-align:middle;">
+        <p style="margin:0;font-size:26px;font-weight:800;color:#3a9d6d;line-height:1.2;">3.2<span style="font-size:16px;">亿</span></p>
+        <p style="margin:6px 0 0;font-size:12px;color:#8a8a8a;line-height:1.4;">用户规模</p>
+      </td>
+      <td style="width:33.33%;background:#fdf1e4;border-radius:10px;padding:16px 8px;text-align:center;vertical-align:middle;">
+        <p style="margin:0;font-size:26px;font-weight:800;color:#d9832e;line-height:1.2;">+67<span style="font-size:16px;">%</span></p>
+        <p style="margin:6px 0 0;font-size:12px;color:#8a8a8a;line-height:1.4;">同比增长</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ============================================================ -->
+  <!-- 组件11：单数据大卡（深色渐变底，放最震撼的一个数字）            -->
+  <!-- ============================================================ -->
+  <section style="margin:24px 0;padding:26px 22px;background-color:#2d5f4f;background-image:linear-gradient(135deg,#2d5f4f,#1e4236);border-radius:12px;text-align:center;">
+    <p style="margin:0;font-size:42px;font-weight:800;color:#ffffff;line-height:1.2;">92<span style="font-size:22px;">%</span></p>
+    <p style="margin:10px 0 0;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.7;">的县城咖啡店活不过第一年——这个数字比我预想的高得多</p>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 组件12：时间线（纵向，手机友好，无 position）                   -->
+  <!-- ============================================================ -->
+  <section style="margin:24px 0;padding:24px 22px;background:#ffffff;border-radius:12px;">
+    <p style="margin:0 0 18px;font-size:16px;font-weight:700;color:#1a1a1a;text-align:center;">事件时间线</p>
+    <section style="padding-left:22px;border-left:2px solid #e2e2e2;">
+      <section style="margin-bottom:18px;">
+        <p style="margin:0 0 0 -27px;padding:0;font-size:0;line-height:1;">
+          <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#3b7dd8;vertical-align:middle;"></span><span style="display:inline-block;margin-left:10px;font-size:15px;font-weight:700;color:#3b7dd8;vertical-align:middle;">2015年</span>
+        </p>
+        <p style="margin:6px 0 0 0;font-size:15px;color:#3f3f3f;line-height:1.8;">行业萌芽，第一批玩家带着不同的想法入场，一切都还很粗糙。</p>
+      </section>
+      <section style="margin-bottom:18px;">
+        <p style="margin:0 0 0 -27px;padding:0;font-size:0;line-height:1;">
+          <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#d9832e;vertical-align:middle;"></span><span style="display:inline-block;margin-left:10px;font-size:15px;font-weight:700;color:#d9832e;vertical-align:middle;">2019年</span>
+        </p>
+        <p style="margin:6px 0 0 0;font-size:15px;color:#3f3f3f;line-height:1.8;">资本涌入，赛道骤然升温，价格战和补贴战同时打响。</p>
+      </section>
+      <section style="margin-bottom:0;">
+        <p style="margin:0 0 0 -27px;padding:0;font-size:0;line-height:1;">
+          <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#d4564b;vertical-align:middle;"></span><span style="display:inline-block;margin-left:10px;font-size:15px;font-weight:700;color:#d4564b;vertical-align:middle;">2024年</span>
+        </p>
+        <p style="margin:6px 0 0 0;font-size:15px;color:#3f3f3f;line-height:1.8;">潮水退去，活下来的人开始重新算账，故事换了一种讲法。</p>
+      </section>
+    </section>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 组件13：双列对比卡（左右不同色，适合"以前vs现在""正方vs反方"） -->
+  <!-- ============================================================ -->
+  <table style="width:100%;border-collapse:separate;border-spacing:8px;margin:24px -8px;">
+    <tr>
+      <td style="width:50%;background:#e8f1fc;border-radius:10px;padding:16px 14px;vertical-align:top;">
+        <p style="margin:0 0 10px;font-size:15px;font-weight:700;color:#3b7dd8;text-align:center;">2019年以前</p>
+        <p style="margin:0;font-size:14px;color:#444;line-height:1.8;">一条街上两三家店，各做各的生意，客单价稳在三十以上。</p>
+      </td>
+      <td style="width:50%;background:#fdecea;border-radius:10px;padding:16px 14px;vertical-align:top;">
+        <p style="margin:0 0 10px;font-size:15px;font-weight:700;color:#d4564b;text-align:center;">2024年以后</p>
+        <p style="margin:0;font-size:14px;color:#444;line-height:1.8;">十七家店挤在五百米内，9.9元的招牌灯箱从街头亮到街尾。</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ============================================================ -->
+  <!-- 组件14：数字步骤卡（编号圆圈，适合写流程/路径/方法论）          -->
+  <!-- ============================================================ -->
+  <section style="margin:24px 0;">
+    <section style="margin-bottom:14px;padding:14px 18px;background:#ffffff;border-radius:10px;">
+      <p style="margin:0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.6;">
+        <span style="display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;background:#2d5f4f;color:#ffffff;border-radius:50%;font-size:14px;margin-right:10px;">1</span>第一步做什么
+      </p>
+      <p style="margin:8px 0 0 0;padding-left:36px;font-size:15px;color:#555;line-height:1.8;">用一两句话说清这一步的动作和要点，别写太长。</p>
+    </section>
+    <section style="margin-bottom:14px;padding:14px 18px;background:#ffffff;border-radius:10px;">
+      <p style="margin:0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.6;">
+        <span style="display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;background:#3b7dd8;color:#ffffff;border-radius:50%;font-size:14px;margin-right:10px;">2</span>第二步做什么
+      </p>
+      <p style="margin:8px 0 0 0;padding-left:36px;font-size:15px;color:#555;line-height:1.8;">编号圆圈颜色可以轮换（主题色/蓝/绿/橙），增加视觉节奏。</p>
+    </section>
+    <section style="margin-bottom:0;padding:14px 18px;background:#ffffff;border-radius:10px;">
+      <p style="margin:0;font-size:16px;font-weight:700;color:#1a1a1a;line-height:1.6;">
+        <span style="display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;background:#d9832e;color:#ffffff;border-radius:50%;font-size:14px;margin-right:10px;">3</span>第三步做什么
+      </p>
+      <p style="margin:8px 0 0 0;padding-left:36px;font-size:15px;color:#555;line-height:1.8;">步骤控制在3–5步，太多就不是"步骤"而是"列表"了。</p>
+    </section>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 组件15：要点列表                                               -->
+  <!-- ============================================================ -->
+  <p style="margin:0 0 10px;font-size:17px;font-weight:700;color:#1a1a1a;">几个关键判断：</p>
+  <p style="margin:0 0 10px;padding-left:22px;font-size:17px;line-height:1.9;color:#3a3a3a;">
+    <span style="color:#2d5f4f;font-weight:800;margin-left:-18px;">▪</span> 第一个要点，写清楚一件事。
+  </p>
+  <p style="margin:0 0 10px;padding-left:22px;font-size:17px;line-height:1.9;color:#3a3a3a;">
+    <span style="color:#3b7dd8;font-weight:800;margin-left:-18px;">▪</span> 第二个要点，方块颜色可以轮换。
+  </p>
+  <p style="margin:0 0 20px;padding-left:22px;font-size:17px;line-height:1.9;color:#3a3a3a;">
+    <span style="color:#d9832e;font-weight:800;margin-left:-18px;">▪</span> 第三个要点。
+  </p>
+
+  <!-- ============================================================ -->
+  <!-- 组件16：关键词标签云（多彩胶囊，适合列关键词/标签/特征）        -->
+  <!-- ============================================================ -->
+  <p style="margin:20px 0 6px;font-size:15px;font-weight:700;color:#1a1a1a;">这一现象的几个关键词：</p>
+  <p style="margin:0 0 20px;font-size:0;line-height:2.4;">
+    <span style="display:inline-block;padding:5px 16px;margin:0 8px 8px 0;background:#eef4f1;color:#2d5f4f;border-radius:20px;font-size:13px;font-weight:500;">价格战</span>
+    <span style="display:inline-block;padding:5px 16px;margin:0 8px 8px 0;background:#e8f1fc;color:#3b7dd8;border-radius:20px;font-size:13px;font-weight:500;">下沉市场</span>
+    <span style="display:inline-block;padding:5px 16px;margin:0 8px 8px 0;background:#e8f6ee;color:#3a9d6d;border-radius:20px;font-size:13px;font-weight:500;">同质化</span>
+    <span style="display:inline-block;padding:5px 16px;margin:0 8px 8px 0;background:#fdf1e4;color:#d9832e;border-radius:20px;font-size:13px;font-weight:500;">加盟陷阱</span>
+    <span style="display:inline-block;padding:5px 16px;margin:0 8px 8px 0;background:#f2edfb;color:#7c5cbf;border-radius:20px;font-size:13px;font-weight:500;">消费降级</span>
+    <span style="display:inline-block;padding:5px 16px;margin:0 8px 8px 0;background:#fdecea;color:#d4564b;border-radius:20px;font-size:13px;font-weight:500;">闭店潮</span>
+  </p>
+
+  <!-- ========== 组件17a：配图（标准样式，间距收紧） ========== -->
+  <section style="margin:18px 0;">
+    <img src="https://example.com/figure-01.jpg" alt="配图说明" style="width:100%;display:block;border-radius:10px;" />
+    <p style="margin:8px 0 0;font-size:13px;color:#a8a8a8;line-height:1.6;text-align:center;">图注：图注是正文的延伸，不是"图为某某"的说明</p>
+  </section>
+
+  <p style="margin:0 0 20px;">配图之后继续正文。每800–1800字一张图，节奏靠"故事—分析—故事"交替。</p>
+
+  <!-- ========== 组件17b：配图（色条图注样式，杂志感更强） ========== -->
+  <section style="margin:18px 0;">
+    <img src="https://example.com/figure-02.jpg" alt="配图说明" style="width:100%;display:block;border-radius:10px 10px 0 0;" />
+    <p style="margin:0;padding:10px 16px;background-color:#2d5f4f;color:#ffffff;font-size:13px;line-height:1.6;border-radius:0 0 10px 10px;">色条图注：这种样式让图片和图注融为一体，适合需要强调的配图</p>
+  </section>
+
+  <!-- ========== 组件18a：分隔符（三色圆点） ========== -->
+  <p style="margin:28px 0;text-align:center;font-size:0;letter-spacing:8px;">
+    <span style="display:inline-block;width:8px;height:8px;background:#3b7dd8;border-radius:50%;"></span>
+    <span style="display:inline-block;width:8px;height:8px;background:#2d5f4f;border-radius:50%;"></span>
+    <span style="display:inline-block;width:8px;height:8px;background:#d9832e;border-radius:50%;"></span>
+  </p>
+
+  <!-- 下一个章节：复制上面的「章节卡片标题」或「渐变章节标题」继续即可 -->
+  <section style="margin:32px 0 20px;padding:20px 22px;background:#eef4f1;border-radius:12px;border-left:6px solid #2d5f4f;">
+    <h2 style="margin:0;font-size:21px;line-height:1.5;font-weight:800;color:#1a1a1a;">三、下一个章节</h2>
+  </section>
+
+  <p style="margin:0 0 20px;">重复使用模板内的组件，不要引入新的样式写法，保持全文视觉统一。连续纯文字不超过3段，就插一个组件或配图。</p>
+
+  <!-- ========== 组件18b：分隔符（短线，更克制） ========== -->
+  <p style="margin:28px 0;text-align:center;font-size:0;">
+    <span style="display:inline-block;width:40px;height:3px;background:#c9b879;border-radius:2px;"></span>
+  </p>
+
+  <!-- ========== 参考资料（可选） ========== -->
+  <section style="margin:40px 0 0;padding:22px;background:#ffffff;border-radius:10px;">
+    <p style="margin:0 0 12px;font-size:15px;font-weight:700;color:#1a1a1a;">参考资料</p>
+    <p style="margin:0 0 6px;font-size:13px;color:#9a9a9a;line-height:1.8;">1. 平台名 ·《文章或视频标题》· 发布时间</p>
+    <p style="margin:0 0 6px;font-size:13px;color:#9a9a9a;line-height:1.8;">2. 平台名 ·《标题》· 发布时间</p>
+    <p style="margin:0;font-size:13px;color:#9a9a9a;line-height:1.8;">3. 机构名 ·《报告名称》· 发布时间</p>
+  </section>
+
+  <!-- ========== 文末署名区 ========== -->
+  <section style="margin:32px 0 0;padding:24px 0 0;border-top:1px solid #eeeeee;">
+    <section style="margin-bottom:12px;font-size:0;">
+      <!-- 头像：发布前替换为真实头像图片URL；没有头像可删掉整个 img 标签 -->
+      <img src="https://example.com/avatar.jpg" alt="竹心一言" style="width:46px;height:46px;border-radius:50%;vertical-align:middle;" />
+      <span style="margin-left:12px;font-size:17px;font-weight:700;color:#1a1a1a;vertical-align:middle;">竹心一言</span>
+    </section>
+    <p style="margin:0 0 6px;font-size:14px;color:#8a8a8a;line-height:1.7;">写一点作者简介，比如关注的领域、更新频率。</p>
+    <p style="margin:18px 0 0;font-size:14px;color:#b0b0b0;line-height:1.7;">— 全文完 · 感谢阅读 —</p>
+  </section>
+
+</section>
+</body>
+</html>
