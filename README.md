@@ -28,6 +28,13 @@ Keeping those as separate steps means the writing and the layout are not tangled
 - **Paste-ready** — the rendered HTML pastes into the WeChat editor cleanly, without re-styling
 - **Single page** — `template.html` holds the layout, so a new article means changing the content, not the template
 
+## Artwork policy
+
+- **Real photos ≥ 1/3**: news scenes, product shots, keynotes, device and app screenshots — sourced via image search, captioned with credit.
+- **AI concept images ≥ 1/3**: boundaries, radii, permission layers, timelines — generated with a saturated palette and no text.
+- **Alternate the two**: one image per 500–900 characters; ≥10 images under 10k characters, ≥14 for 20k–45k pieces.
+- Details in `references/images.md`.
+
 ## Layout
 
 ```
