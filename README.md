@@ -31,7 +31,7 @@ Keeping those as separate steps means the writing and the layout are not tangled
 ## Artwork policy
 
 - **Real photos ≥ 3/4 (the bulk of all images)**: people, news scenes, keynotes, products and interfaces, report covers — sourced via image search; every piece covers all four kinds. Captions describe the scene only — no credit lines or outlet names.
-- **AI concept images ≥ 1/3**: boundaries, radii, permission layers, timelines — generated with a saturated palette and no text.
+- **AI concept images ≤ 1/4 (at least 4, capped at 4–6 for short pieces)**: only for what a photo cannot show — boundaries, radii, permission layers, timelines; saturated palette, no text.
 - **Alternate the two**: one image per 250–400 characters; ≥24 images under 10k characters (30+ recommended), ≥40 for 20k–45k pieces (50+ recommended); at least 3 per chapter, 2 of them real.
 - Details in `references/images.md`.
 
