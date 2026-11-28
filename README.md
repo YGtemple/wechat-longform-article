@@ -30,9 +30,9 @@ Keeping those as separate steps means the writing and the layout are not tangled
 
 ## Artwork policy
 
-- **Real photos ≥ 1/3**: news scenes, product shots, keynotes, device and app screenshots — sourced via image search, captioned with credit.
+- **Real photos ≥ 1/2 (must be the majority)**: people, news scenes, keynotes, products and interfaces, report covers — sourced via image search, captioned with credit; every piece covers all four kinds.
 - **AI concept images ≥ 1/3**: boundaries, radii, permission layers, timelines — generated with a saturated palette and no text.
-- **Alternate the two**: one image per 500–900 characters; ≥10 images under 10k characters, ≥14 for 20k–45k pieces.
+- **Alternate the two**: one image per 350–600 characters; ≥16 images under 10k characters (18–20 recommended), ≥24 for 20k–45k pieces (30+ recommended); at least 2 per chapter.
 - Details in `references/images.md`.
 
 ## Layout
